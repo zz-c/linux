@@ -34,3 +34,9 @@ sudo apt-get install gcc-aarch64-linux-gnu
 aarch64-linux-gnu-gcc --version
 aarch64-linux-gnu-gcc main.c -o testfork_arm64
 ```
+
+## CMake交叉编译
+```bash
+# 安装64位ARM交叉编译工具链
+cmake -DCMAKE_TOOLCHAIN_FILE=../aarch64-toolchain.cmake ..
+```
