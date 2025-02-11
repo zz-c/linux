@@ -4,4 +4,4 @@ project(ForkExample C)
 set(CMAKE_C_STANDARD 99)
 add_executable(fork_example main.c)
 # 强制 CMake 使用 C 编译器
-set(CMAKE_C_COMPILER gcc)
+#set(CMAKE_C_COMPILER gcc)
