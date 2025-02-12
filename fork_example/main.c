@@ -14,11 +14,11 @@ int main() {
 
     if (pid == 0) {
         // 子进程
-        printf("This is the child process id %d,parent id %d.\n", getpid(), getppid());
+        printf("child process id %d,parent id %d.\n", getpid(), getppid());
     } else {
         // 父进程
         wait(NULL);  // 等待子进程结束
-        printf("This is the parent process id %d,child id %d.\n", getpid(), pid);
+        printf("parent process id %d,child id %d.\n", getpid(), pid);
     }
 
     return 0;
