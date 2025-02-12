@@ -15,10 +15,7 @@
 		},
 		{
 			"label": "MakeTask",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
+			"type": "shell",
 			"command": "make",
 			"args": []
 		},
